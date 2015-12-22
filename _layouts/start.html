@@ -8,7 +8,7 @@
         <div class="container">
             <h1>Hej!</h1>
             <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling.</p>
-            <p>På den här sidan kan du läsa lite <a href="#om-mig">om mig</a>, men du kan även kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller komma i <a href="#kontakt">kontakt</a> med mig.</p>
+            <p>På den här sidan kan du läsa <a href="#om-mig">om mig</a>, kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller komma i <a href="#kontakt">kontakt</a> med mig.</p>
         </div>
     </header>
 
@@ -45,10 +45,10 @@
                         </div>
                     </div>
                     <div class="contact-form flex-250">
-                        <form action="mailto:info@jarnehall.se" enctype="text/plain" method="post">
-                            <label for="name">Namn</label><input type="text" name="name" placeholder="Tobias Fünke">
-                            <label for="email">E-post</label><input type="email" name="email" placeholder="tobias.funke@bluthcompany.com">
-                            <label for="content">Meddelande</label><textarea type="text" name="content" placeholder="I just blued myself."></textarea>
+                        <form action="mailto:{{ site.email }}" enctype="text/plain" method="post">
+                            <label for="name">Namn</label><input type="text" name="name" placeholder="John Doe">
+                            <label for="email">E-post</label><input type="email" name="email" placeholder="john@doe.com">
+                            <label for="content">Meddelande</label><textarea type="text" name="content" placeholder="Tjena, hur är läget?"></textarea>
                             <button>Skicka</button>
                         </form>
                     </div>
