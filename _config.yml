@@ -9,7 +9,7 @@
 title: Alexander Järnehalls DPY
 email: alexander@jarnehall.se
 description: En sida för min utbildning till front-end-utvecklare
-baseurl: ""
+baseurl: "/dpy"
 url: "http://jarnehall.se" # the base hostname & protocol for your site
 
 # Build settings
