@@ -1,0 +1,160 @@
+.container {
+    margin: 0 auto;
+    max-width: 920px;
+
+    p {
+        display: block;
+        height: 100%;
+    }
+}
+
+header {
+    @include gradient-bg(145deg, $color-deepblue, $color-lightblue);
+    color: $color-white;
+
+    div.container {
+        padding: 10vh 20px;
+
+        @media (min-width: 500px) {
+            h1 {
+                font-size: 3rem;
+            }
+            padding: 12vh 30px;
+        }
+
+        @media (min-width: 800px) {
+            padding: 20vh 30px;
+        }
+
+        margin: 0 auto;
+        max-width: 600px;
+
+        p {
+            @include font(1.325rem, 1.5, 300);
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+            @media (min-width: 500px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+main {
+    @include font(1rem, 1.8, 300);
+    color: $color-black;
+    margin-bottom: 50px;
+}
+
+section {
+    padding: 30px 20px 0;
+    @media (min-width: 500px) {
+        padding: 30px 30px 0;
+    }
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.columns {
+  -webkit-columns: 2 300px;
+     -moz-columns: 2 300px;
+          columns: 2 300px;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin: 0 -30px;
+}
+
+.flex- {
+    padding: 0 30px;
+}
+
+.flex-200 {
+    @extend .flex-;
+    flex: 1 1 200px;
+}
+
+.flex-250 {
+    @extend .flex-;
+    flex: 1 1 250px;
+}
+
+.flex-300 {
+    @extend .flex-;
+    flex: 1 1 300px;
+}
+
+footer {
+    @include gradient-bg(140deg, darken($color-black, 3%), lighten($color-black, 2%));
+    @include font(1rem, 1.8, 300);
+    color: $color-white;
+    padding-bottom: 30px;
+    section.contact {
+        h2 {
+            color: $color-white;
+            margin-bottom: 50px;
+        }
+        .contact-card {
+            margin-bottom: 50px;
+            margin-top: -30px;
+
+            img.selfie {
+                width: 200px;
+                height: 200px;
+                display: block;
+                margin: 20px auto;
+                border-radius: 100px;
+                transition: transform 0.4s;
+                &:hover {
+                    transform: rotateZ(5deg);
+                }
+            }
+            div {
+                padding-right: 60px;
+                margin: 0 auto;
+                width: 180px;
+                a {
+                    span.icon {
+                        padding-left: 60px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        margin-top: 20px;
+                    }
+                    &:nth-child(1) span.icon {
+                        background: url("../img/email.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:nth-child(2) span.icon {
+                        background: url("../img/github.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:nth-child(3) span.icon {
+                        background: url("../img/codepen.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:hover span {
+                        padding-left: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

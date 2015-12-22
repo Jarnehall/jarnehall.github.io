@@ -1,0 +1,17 @@
+button {
+    @include font(1.25rem, 1.5, 600);
+    @include gradient-bg(0deg, darken($color-green, 8%), lighten($color-green, 4%));
+    color: $color-white;
+    padding: 8px 50px;
+    border: none;
+    transition: 0.2s;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        @include gradient-bg(0deg, darken($color-green, 3%), lighten($color-green, 9%));
+        text-decoration: underline;
+    }
+
+    &:active {}
+}

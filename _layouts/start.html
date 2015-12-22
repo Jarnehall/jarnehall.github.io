@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Hej!</h1>
+            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling. Här hittar du mina skoluppgifter och annat kul med kod.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-me">
+            <h2>Lite kort om mig</h2>
+            <div class="container">
+                <div class="flex-parent">
+                    <p class="flex-300">Jag valde att läsa front-end-utveckling på grund av min kärlek till riktigt bra webbplatser. Tidigare har jag studerat programmering (framförallt JAVA) och nätverk. Men jag har insett att det är frontend jag verkligen brinner för, därför pluggar jag nu html, css och javascript!</p>
+                    <p class="flex-300">På min fritid sysslar jag (utöver att skriva kod) mycket med datorspel (just nu går <a target="_blank" href="http://rocketleague.psyonix.com/" alt="ROCKET LEAGUE - Official Site">Rocket League</a> och <a target="_blank" href="http://battle.net/hearthstone" alt="Hearthstone: Heroes of Warcraft Official Game Site">Hearthstone</a> varmt), matlagning och film. Något som jag skulle kunna lära ut till dig, utöver mina kunskaper inom programmering, är hur man gör en schysst svamprisotto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h2>Axplock från <a href="{{ "/blogg/" | prepend: site.baseurl }}">bloggen</a></h2>
+            <div class="container">
+                <div class="flex-parent">
+                    {{ content }}
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="contact">
+            <h2>Kontakta mig</h2>
+            <div class="container">
+                <div class="flex-parent">
+                    <div class="contact-card flex-250">
+                        <img class="selfie" src="img/me.jpg" alt="This is me!">
+                        <div>
+                            <a href="mailto:alexander@jarnehall.se"><span class="icon">alexander@jarnehall.se</span></a>
+                            <a target="_blank" href="http://github.com/jarnehall"><span class="icon">github.com/jarnehall</span></a>
+                            <a target="_blank" href="http://codepen.io/jarnehall"><span class="icon">codepen.io/jarnehall</span></a>
+                        </div>
+                    </div>
+                    <div class="contact-form flex-250">
+                        <form action="mailto:info@jarnehall.se" enctype="text/plain" method="post">
+                            <label for="name">Namn</label><input type="text" name="name" placeholder="Tobias Fünke">
+                            <label for="email">E-post</label><input type="email" name="email" placeholder="tobias.funke@bluthcompany.com">
+                            <label for="content">Meddelande</label><textarea type="text" name="content" placeholder="I just blued myself."></textarea>
+                            <button>Skicka</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

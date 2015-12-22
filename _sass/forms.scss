@@ -1,0 +1,48 @@
+form {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+input {
+    @include font(0.875rem, 1.2, 400);
+    color: $color-black;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 2px transparent solid;
+    border-radius: 3px;
+    width: 100%;
+}
+
+textarea {
+    @include font(0.875rem, 1.2, 400);
+    padding-top: 10px;
+    @extend input;
+    height: 150px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border: 2px lighten($color-lightblue, 30%) solid;
+    background-color: lighten($color-lightblue, 60%);
+}
+
+::-webkit-input-placeholder {
+    color: #bcbcbc;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    color: #bcbcbc;
+    font-weight: 300;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
