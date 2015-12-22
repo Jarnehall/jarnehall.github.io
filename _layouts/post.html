@@ -1,19 +1,46 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
 
     <header class="post-header">
         <div class="container">
-            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p><a href="{{ site.baseurl }}/">Startsida</a> > <a href="{{ site.baseurl }}/#skoluppgifter">Skoluppgifter</a> > {{ page.title }}</p>
         </div>
     </header>
 
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <p>{{ page.categories | join: ', ' }}</p>
+    <main>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <div class="post-content" itemprop="articleBody">
-        {{ content }}
-    </div>
+            <div class="container">
+                <p>
+                    <span class="post-meta"><strong>{{ page.assignment }}</strong> - {{ page.date | date: "%-d %b, %Y" }}</span>
+                </p>
 
-</article>
+                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+
+                <div class="post-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+
+            </article>
+
+        </div>
+
+        <section>
+            <div class="container page-navigation">
+                {% if page.next.url %}
+                <a class="next" href="{{ page.next.url  | prepend: site.baseurl }}">&laquo; {{page.next.title}}</a>
+                {% endif %}
+                {% if page.previous.url %}
+                <a class="prev" href="{{ page.previous.url  | prepend: site.baseurl }}">{{page.previous.title}} &raquo;</a>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

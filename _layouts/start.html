@@ -4,26 +4,27 @@
 {% include head.html %}
 
 <body>
-    <header>
+    <header class="page-header">
         <div class="container">
             <h1>Hej!</h1>
-            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling. Här hittar du mina skoluppgifter och annat kul med kod.</p>
+            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling.</p>
+            <p>På den här sidan kan du läsa lite <a href="#om-mig">om mig</a>, men du kan även kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller komma i <a href="#kontakt">kontakt</a> med mig.</p>
         </div>
     </header>
 
     <main>
         <section class="about-me">
-            <h2>Lite kort om mig</h2>
+            <h2 id="om-mig">Lite kort om mig</h2>
             <div class="container">
                 <div class="flex-parent">
                     <p class="flex-300">Jag valde att läsa front-end-utveckling på grund av min kärlek till riktigt bra webbplatser. Tidigare har jag studerat programmering (framförallt JAVA) och nätverk. Men jag har insett att det är frontend jag verkligen brinner för, därför pluggar jag nu html, css och javascript!</p>
-                    <p class="flex-300">På min fritid sysslar jag (utöver att skriva kod) mycket med datorspel (just nu går <a target="_blank" href="http://rocketleague.psyonix.com/" alt="ROCKET LEAGUE - Official Site">Rocket League</a> och <a target="_blank" href="http://battle.net/hearthstone" alt="Hearthstone: Heroes of Warcraft Official Game Site">Hearthstone</a> varmt), matlagning och film. Något som jag skulle kunna lära ut till dig, utöver mina kunskaper inom programmering, är hur man gör en schysst svamprisotto.</p>
+                    <p class="flex-300">På min fritid sysslar jag (utöver att skriva kod) mycket med datorspel (just nu går <a target="_blank" href="http://rocketleague.psyonix.com/" title="ROCKET LEAGUE - Official Site">Rocket League</a> och <a target="_blank" href="http://battle.net/hearthstone" title="Hearthstone: Heroes of Warcraft Official Game Site">Hearthstone</a> varmt), matlagning och film. Något som jag skulle kunna lära ut till dig, utöver mina kunskaper inom programmering, är hur man gör en schysst svamprisotto.</p>
                 </div>
             </div>
         </section>
 
         <section class="blog">
-            <h2>Skolluppgifter</a></h2>
+            <h2 id="skoluppgifter">Skoluppgifter</a></h2>
             <div class="container">
                 {{ content }}
             </div>
@@ -32,15 +33,15 @@
     </main>
     <footer>
         <section class="contact">
-            <h2>Kontakta mig</h2>
+            <h2 id="kontakt">Kontakta mig</h2>
             <div class="container">
                 <div class="flex-parent">
                     <div class="contact-card flex-250">
                         <img class="selfie" src="img/me.jpg" alt="This is me!">
                         <div>
-                            <a href="mailto:alexander@jarnehall.se"><span class="icon">alexander@jarnehall.se</span></a>
-                            <a target="_blank" href="http://github.com/jarnehall"><span class="icon">github.com/jarnehall</span></a>
-                            <a target="_blank" href="http://codepen.io/jarnehall"><span class="icon">codepen.io/jarnehall</span></a>
+                            <a href="mailto:alexander@jarnehall.se" title="Skicka e-post till: {{ site.email }}"><span class="icon">{{ site.email }}</span></a>
+                            <a target="_blank" href="http://github.com/jarnehall" title="GitHub - Alexander Järnehall"><span class="icon">github.com/jarnehall</span></a>
+                            <a target="_blank" href="http://codepen.io/jarnehall" title="CodePen - Alexander Järnehall"><span class="icon">codepen.io/jarnehall</span></a>
                         </div>
                     </div>
                     <div class="contact-form flex-250">

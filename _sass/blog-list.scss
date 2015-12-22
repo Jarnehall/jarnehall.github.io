@@ -2,14 +2,14 @@
 .post-list {
     list-style: none;
     padding: 0;
-    margin: 0 -30px;
+    margin: 0 -20px;
 
     h3 {
         margin-bottom: 0;
     }
 
     span.post-meta {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
     }
 
     p.post-content {
@@ -30,4 +30,20 @@
     font-size: 1.25rem;
     cursor: pointer;
     display: none;
+}
+
+.page-navigation {
+    display: block;
+    overflow: hidden;
+
+    .next {
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .prev {
+        float: right;
+        text-align: right;
+    }
 }

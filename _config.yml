@@ -15,7 +15,7 @@ timezone: Europe/Stockholm
 
 # Build settings
 markdown: kramdown
-permalink: /blogg/:title/
+permalink: /:title/
 
 # Filtering Content
 show_drafts: false
