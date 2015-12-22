@@ -16,12 +16,8 @@ header {
             margin: 0 auto;
             padding: 10px 30px;
 
-            h1 {
-                margin-bottom: 0;
-            }
-
             p {
-                font-weight: 300;
+                @include font(1rem, 1.5, 300);
             }
         }
     }

@@ -1,31 +1,11 @@
 <footer class="site-footer">
 
-    <div class="wrapper">
-
-        <div class="footer-col-wrapper">
-
-            <div class="footer-col footer-col-2">
-
-                <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-                <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <li>
-                        {% include icon-github.html username=site.github_username %}
-                    </li>
-                    {% endif %}
-
-                    {% if site.twitter_username %}
-                    <li>
-                        {% include icon-twitter.html username=site.twitter_username %}
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-
+    <div class="contact-card container">
+        <div>
+            <a href="mailto:alexander@jarnehall.se" title="Skicka e-post till: {{ site.email }}"><span class="icon">{{ site.email }}</span></a>
+            <a target="_blank" href="http://github.com/jarnehall" title="GitHub - Alexander Järnehall"><span class="icon">github.com/jarnehall</span></a>
+            <a target="_blank" href="http://codepen.io/jarnehall" title="CodePen - Alexander Järnehall"><span class="icon">codepen.io/jarnehall</span></a>
         </div>
-
     </div>
 
 </footer>

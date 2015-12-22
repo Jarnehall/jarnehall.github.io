@@ -15,11 +15,12 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
             <div class="container">
+
+
+                <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
                 <p>
                     <span class="post-meta"><strong>{{ page.assignment }}</strong> - {{ page.date | date: "%-d %b, %Y" }}</span>
                 </p>
-
-                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 
                 <div class="post-content" itemprop="articleBody">
                     {{ content }}
@@ -32,10 +33,10 @@
         <section>
             <div class="container page-navigation">
                 {% if page.next.url %}
-                <a class="next" href="{{ page.next.url  | prepend: site.baseurl }}">&laquo; {{page.next.title}}</a>
+                <a class="next" href="{{ page.next.url  | prepend: site.baseurl }}">&laquo; {{ page.next.title }}</a>
                 {% endif %}
                 {% if page.previous.url %}
-                <a class="prev" href="{{ page.previous.url  | prepend: site.baseurl }}">{{page.previous.title}} &raquo;</a>
+                <a class="prev" href="{{ page.previous.url  | prepend: site.baseurl }}">{{ page.previous.title }} &raquo;</a>
                 {% endif %}
             </div>
         </section>
