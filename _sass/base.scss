@@ -8,9 +8,14 @@ body {
 }
 
 h1 {
-    @include font(2.5rem, 1.2, 600);
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    @include font(2rem, 1.2, 600);
     margin-top: 1rem;
+
+        @media (min-width: 500px) {
+        &.post-title {
+            @include font(3.5rem, 1.1, 600);
+        }
+    }
 }
 
 h2 {
@@ -21,20 +26,21 @@ h2 {
 
 a {
     font-weight: 40;
-    color: lighten($color-lightblue, 20%);
+    color: lighten($color-lightblue, 10%);
     border-bottom: 1px solid;
     transition: color 0.3s;
     text-decoration: none;
     &:hover {
-        color: $color-lightblue;
+        color: darken($color-lightblue, 10%);
     }
 }
 
+header,
 footer {
     a {
-        color: lighten($color-lightblue, 45%);
+        color: lighten($color-lightblue, 48%);
         &:hover {
-            color: lighten($color-lightblue, 55%);
+            color: lighten($color-lightblue, 58%);
         }
     }
 }

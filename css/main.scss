@@ -35,6 +35,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+img {
+    max-width: 100%;
+}
+
 
 
 // Use media queries like this:
@@ -57,5 +61,6 @@ $on-laptop:        800px;
     "style",
     "base",
     "button",
-    "forms"
+    "forms",
+    "blog-list"
 ;
