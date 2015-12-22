@@ -1,11 +1,6 @@
 .container {
     margin: 0 auto;
     max-width: 920px;
-
-    p {
-        display: block;
-        height: 100%;
-    }
 }
 
 header {
@@ -13,7 +8,7 @@ header {
     color: $color-white;
 
     div.container {
-        padding: 10vh 20px;
+        padding: 10vh 30px;
 
         @media (min-width: 500px) {
             h1 {
@@ -46,10 +41,7 @@ main {
 }
 
 section {
-    padding: 30px 20px 0;
-    @media (min-width: 500px) {
-        padding: 30px 30px 0;
-    }
+    padding: 30px 30px 0;
 }
 
 .blog-post {

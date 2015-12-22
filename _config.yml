@@ -11,7 +11,23 @@ email: alexander@jarnehall.se
 description: En sida för min utbildning till front-end-utvecklare
 baseurl: "/dpy"
 url: "http://jarnehall.se" # the base hostname & protocol for your site
+timezone: Europe/Stockholm
 
 # Build settings
 markdown: kramdown
 permalink: /blogg/:title/
+
+# Filtering Content
+show_drafts: false
+
+# Post settings
+excerpt_separator: <!--more-->
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alexander Järnehall"

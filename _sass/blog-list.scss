@@ -1,0 +1,33 @@
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 -30px;
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    span.post-meta {
+        font-size: 0.75rem;
+    }
+
+    p.post-content {
+        clear: both;
+    }
+}
+
+.post {
+    overflow: hidden;
+
+    &:nth-child(n+5) {
+        height: 0px;
+    }
+}
+
+.read-more {
+    text-align: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none;
+}

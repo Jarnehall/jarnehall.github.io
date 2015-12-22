@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Min nya DPY!"
-categories: test
-featured: true
+assignment: "Uppgift A_1"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+You’ll find this post in your `_posts` directory.<!--more--> Go ahead and edit it and re-build the site to see your changes.
 
 You can rebuild the site in many different ways. But the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
