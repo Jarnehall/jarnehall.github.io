@@ -3,9 +3,7 @@ title:  "Webben om fem år"
 assignment: "Uppgift A_2"
 ---
 
-Uppgiften går ut på att tänka över hur webben kommer utvecklas under de närmaste fem åren.<!--more-->
-
-Jag har valt att fokusera på en väldigt smal del av webben om fem år, framförallt för att jag tror det kommer vara en av de största förändringarna från idag, och för att det är ett ämne som intresserar mig extra mycket.
+Jag har valt att fokusera på en väldigt smal del av webben om fem år, framförallt för att jag tror det kommer vara en av de största förändringarna från idag, och för att det är ett ämne som intresserar mig extra mycket.<!--more-->
 
 Personligen tror jag webben kommer bli mer mobil, det låter kanske som ett konstigt påstående när man tittar tillbaka på hur mobil webben har blivit de senaste fem åren, men stanna kvar så ska jag förklara vad jag menar.
 

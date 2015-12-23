@@ -1,5 +1,5 @@
 ---
-title:  "Presentera information"
+title:  "Interaktiv infographic"
 assignment: "Uppgift B_5"
 ---
 
