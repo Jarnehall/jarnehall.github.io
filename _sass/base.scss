@@ -8,13 +8,11 @@ body {
 }
 
 h1 {
-    @include font(2rem, 1.2, 600);
+    @include font(3rem, 1.2, 600);
     margin-top: 1rem;
 
         @media (min-width: 500px) {
-        &.post-title {
-            @include font(3.5rem, 1.1, 600);
-        }
+            @include font(4rem, 1.2, 600);
     }
 }
 

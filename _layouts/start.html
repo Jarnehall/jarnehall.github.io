@@ -7,8 +7,8 @@
     <header class="page-header">
         <div class="container">
             <h1>Hej!</h1>
-            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling.</p>
-            <p>På den här sidan kan du läsa <a href="#om-mig">om mig</a>, kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller komma i <a href="#kontakt">kontakt</a> med mig.</p>
+            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling på Lernia.</p>
+            <p>Kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller <a href="#kontakt">skriv en rad</a> om du vill komma i kontakt med mig.</p>
         </div>
     </header>
 
@@ -24,7 +24,7 @@
         </section>
 
         <section class="blog">
-            <h2 id="skoluppgifter">Skoluppgifter</a></h2>
+            <h2 id="skoluppgifter">Skoluppgifter</h2>
             <div class="container">
                 {{ content }}
             </div>
@@ -46,9 +46,9 @@
                     </div>
                     <div class="contact-form flex-250">
                         <form action="mailto:{{ site.email }}" enctype="text/plain" method="post">
-                            <label for="name">Namn</label><input type="text" name="name" placeholder="John Doe">
-                            <label for="email">E-post</label><input type="email" name="email" placeholder="john@doe.com">
-                            <label for="content">Meddelande</label><textarea type="text" name="content" placeholder="Tjena, hur är läget?"></textarea>
+                            <label>Namn<input type="text" name="name" placeholder="John Doe"></label>
+                            <label>E-post<input type="email" name="email" placeholder="john@doe.com"></label>
+                            <label>Meddelande<textarea name="content" placeholder="Tjena, hur är läget?"></textarea></label>
                             <button>Skicka</button>
                         </form>
                     </div>

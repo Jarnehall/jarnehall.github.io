@@ -30,14 +30,14 @@ header {
 
             @media (min-width: 500px) {
                 padding: 80px 30px;
-
-                h1 {
-                    font-size: 3rem;
-                }
             }
 
             @media (min-width: 800px) {
-                //padding: 120px 30px;
+                padding: 120px 30px;
+            }
+
+            @media (min-width: 1400px) {
+                padding: 200px 30px;
             }
 
             p {
