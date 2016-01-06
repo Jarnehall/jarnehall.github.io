@@ -3,7 +3,9 @@ title:  "Interaktiv infographic"
 assignment: "Uppgift B_5"
 ---
 
-Den här uppgiften handlade om att göra en webbsida som presenterar information av något slag. Kolla gärna in [resultatet](http://jarnehall.github.io/infographic), uppgiften är [versionshanterad på GitHub](https://github.com/jarnehall/infographic){:target="_blank"}.<!--more-->
+Den här uppgiften handlade om att göra en webbsida som presenterar information av något slag. Vilken sorts information och hur den presenterades var fritt att välja själv.<!--more-->
+
+Kolla in [resultatet](http://jarnehall.github.io/infographic), eller koden som hittas på [GitHub](https://github.com/jarnehall/infographic){:target="_blank"}.
 
 Jag var sugen på att göra en design som använde sig av bilder, och jag ville också lära mig om hur man kan använda flexbox. Så slutligen bestämde jag mig för att göra en "filmsida" över Tarantinos filmer, eftersom jag då kunde använda mig av posters för filmerna samt att jag är väldigt förtjust i hans filmer.
 
