@@ -5,7 +5,7 @@ assignment: "Uppgift C_2"
 
 Uppgiften gick ut på att vi, individuellt, skulle utveckla ett utbildande spel med hjälp av html, css och javascript.
 
-Mitt spel kallar jag för [Ordjakten](http://jarnehall.github.com/ordjakten/)! <!--more--> Testa gärna spela spelet, eller inspektera koden som finns versionshanterad på [GitHub](https://github.com/jarnehall/ordjakten/){:target="_blank"}.
+Mitt spel kallar jag för [Ordjakten](http://jarnehall.github.com/ordjakten/){:target="_blank"}! <!--more--> Testa gärna spela spelet, eller inspektera koden som finns versionshanterad på [GitHub](https://github.com/jarnehall/ordjakten/){:target="_blank"}.
 
 
 ### Idéskiss
@@ -25,7 +25,7 @@ Målgruppen för spelet är framförallt barn i åldrarna 6-9 år, eftersom jag 
 
 Vi fick tillgång till att använda vilka bibliotek och ramverk vi ville, men jag var sugen på att testa något jag inte hade gjort förut. Vad jag ville göra var att bygga hela spelet som en webbapplikation, där allt dynamiskt innehåll skapas med hjälp av javascript, och jag ville göra det utan ramverk (så som jQuery) för att öva mer på att arbeta med vanlig javascript.
 
-Förutom att jag fick kolla in [Mozillas javascript-dokumentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) en hel del så gick programmeringen relativt smärtfritt.
+Förutom att jag fick kolla in [Mozillas javascript-dokumentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript){:target="_blank"} en hel del så gick programmeringen relativt smärtfritt.
 
 Spelet är strukturerat så att det finns en html-fil (index.html), som bara innehåller element som är statiska och aldrig ändras (header och footer i det här fallet). Sedan använder jag javascript för att skapa, ta bort och redigera element allt eftersom det behövs.
 
@@ -38,4 +38,4 @@ Något som hade underlättat (och som jag kommer testa under nästa projekt) vor
 
 Spelet är fullt fungerande och gick ganska fort att utveckla trots att jag experimenterade mig fram med riktig kod från start, men den slutgiltiga koden hade nog blivit elegantare om jag tog mig tid till att tänka igenom hur jag skulle strukturera koden innan jag skrev den.
 
-Eftersom det här var första gången jag utvecklat en webbapplikation helt och hållet med javascript utan ramverk lärde jag mig en annan sak också, nämligen att det fort blir väldigt bökigt att lägga till och ta bort element många html-element. Jag tänkte inte på det under utvecklingen av spelet, men nu i efterhand kom jag på att jag borde skrivit en funktion som skapar html-element åt mig. När tanken slog mig ville jag snabbt testa hur något sådant skulle kunna se ut, så jag gjorde ett exempel du kan [kolla in på Codepen](http://codepen.io/jarnehall/pen/adJEdE).
+Eftersom det här var första gången jag utvecklat en webbapplikation helt och hållet med javascript utan ramverk lärde jag mig en annan sak också, nämligen att det fort blir väldigt bökigt att lägga till och ta bort element många html-element. Jag tänkte inte på det under utvecklingen av spelet, men nu i efterhand kom jag på att jag borde skrivit en funktion som skapar html-element åt mig. När tanken slog mig ville jag snabbt testa hur något sådant skulle kunna se ut, så jag gjorde ett exempel du kan [kolla in på Codepen](http://codepen.io/jarnehall/pen/adJEdE){:target="_blank"}.

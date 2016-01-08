@@ -1,68 +1,24 @@
 .container {
     margin: 0 auto;
-    max-width: 880px;
-}
-
-header {
-    @include gradient-bg(145deg, $color-deepblue, $color-lightblue);
-    color: $color-white;
-
-    h1 {
-        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-    }
-
-    &.post-header {
-        .container {
-            margin: 0 auto;
-            padding: 10px 30px;
-
-            p {
-                @include font(1rem, 1.5, 300);
-            }
-        }
-    }
-
-    &.page-header {
-        .container {
-            margin: 0 auto;
-            max-width: 600px;
-            padding: 50px 20px;
-
-            @media (min-width: 500px) {
-                padding: 80px 30px;
-            }
-
-            @media (min-width: 800px) {
-                padding: 120px 30px;
-            }
-
-            @media (min-width: 1400px) {
-                padding: 200px 30px;
-            }
-
-            p {
-                @include font(1.25rem, 1.5, 300);
-                text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-
-                @media (min-width: 500px) {
-                    @include font(1.425rem, 1.5, 300);
-                }
-            }
-        }
-    }
+    max-width: $content-width;
 }
 
 main {
-    @include font(1rem, 1.8, 300);
-    color: $color-black;
     margin-bottom: 50px;
+
+    a[target^="_blank"] {
+        background: right top 6px no-repeat;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTEuNjI2IiBoZWlnaHQ9IjUxMS42MjciIHZpZXdCb3g9IjAgMCA1MTEuNjI2IDUxMS42MjciPjxwYXRoIGNsYXNzPSJzdmcxIiBkPSJNMzkyLjg1NyAyOTIuMzU0aC0xOC4yNzRjLTIuNjcgMC00Ljg2Ljg1NS02LjU2MyAyLjU3My0xLjcxOCAxLjcwOC0yLjU3MyAzLjg5Ny0yLjU3MyA2LjU2M3Y5MS4zNmMwIDEyLjU2NC00LjQ3IDIzLjMxNi0xMy40MTUgMzIuMjYzLTguOTQ1IDguOTQ1LTE5LjcgMTMuNDE0LTMyLjI2NCAxMy40MTRIODIuMjI0Yy0xMi41NjIgMC0yMy4zMTctNC40Ny0zMi4yNjQtMTMuNDE0LTguOTQ1LTguOTQ2LTEzLjQxNy0xOS42OTgtMTMuNDE3LTMyLjI2MlYxNTUuMzFjMC0xMi41NjIgNC40Ny0yMy4zMTMgMTMuNDE3LTMyLjI2IDguOTQ3LTguOTQ2IDE5LjcwMi0xMy40MTcgMzIuMjY0LTEzLjQxN2gyMDAuOTk0YzIuNjcgMCA0Ljg2LS44NiA2LjU3LTIuNTcgMS43MS0xLjcxMyAyLjU2Ni0zLjkgMi41NjYtNi41NjdWODIuMjJjMC0yLjY2LS44NTUtNC44NTItMi41NjYtNi41NjItMS43MS0xLjcxMy0zLjktMi41NjgtNi41Ny0yLjU2OEg4Mi4yMjRjLTIyLjY0OCAwLTQyLjAxNiA4LjA0Mi01OC4xMDIgMjQuMTI1QzguMDQyIDExMy4yOTcgMCAxMzIuNjY1IDAgMTU1LjMxM3YyMzcuNTQyYzAgMjIuNjQ3IDguMDQyIDQyLjAxOCAyNC4xMjMgNTguMDk1IDE2LjA4NiAxNi4wODQgMzUuNDU0IDI0LjEzIDU4LjEwMiAyNC4xM2gyMzcuNTQzYzIyLjY0NyAwIDQyLjAxNy04LjA0NiA1OC4xLTI0LjEzIDE2LjA4Ni0xNi4wNzcgMjQuMTI4LTM1LjQ0NyAyNC4xMjgtNTguMDk1di05MS4zNThjMC0yLjY3LS44NTYtNC44Ni0yLjU3NC02LjU3LTEuNzEzLTEuNzE4LTMuOTAzLTIuNTczLTYuNTY1LTIuNTczeiIvPjxwYXRoIGNsYXNzPSJzdmcyIiBkPSJNNTA2LjIgNDEuOTdjLTMuNjE4LTMuNjE2LTcuOTA2LTUuNDIzLTEyLjg1LTUuNDIzSDM0Ny4xN2MtNC45NDcgMC05LjIzMiAxLjgwNy0xMi44NDYgNS40MjQtMy42MTcgMy42MTYtNS40MjggNy45LTUuNDI4IDEyLjg0OHMxLjgxIDkuMjMzIDUuNDI4IDEyLjg1bDUwLjI0NyA1MC4yNDgtMTg2LjE0NiAxODYuMTVjLTEuOTA2IDEuOTA0LTIuODU2IDQuMDk0LTIuODU2IDYuNTY0IDAgMi40OC45NTMgNC42NjggMi44NTYgNi41N2wzMi41NDggMzIuNTQ1YzEuOTAzIDEuOTAzIDQuMDkzIDIuODUyIDYuNTY3IDIuODUyczQuNjY0LS45NDggNi41NjYtMi44NTJsMTg2LjE0OC0xODYuMTQ4IDUwLjI1IDUwLjI0OGMzLjYxNSAzLjYxNyA3LjkgNS40MjYgMTIuODQ4IDUuNDI2czkuMjMzLTEuODA4IDEyLjg1LTUuNDI1YzMuNjE4LTMuNjE2IDUuNDI1LTcuODk4IDUuNDI1LTEyLjg0N1Y1NC44MThjMC00Ljk1Mi0xLjgxNC05LjIzMi01LjQyOC0xMi44NDd6Ii8+PC9zdmc+);
+        background-size: 14px;
+        padding-right: 18px;
+    }
 }
 
 section,
 article {
-    padding: 30px 20px 0;
+    padding: $spacing-unit $spacing-unit-tiny 0;
     @media (min-width: 500px) {
-        padding: 30px 30px 0;
+        padding: $spacing-unit $spacing-unit 0;
     }
 }
 
@@ -74,11 +30,11 @@ article {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin: 0 -20px;
+    margin: 0 -$spacing-unit-tiny;
 }
 
 .flex- {
-    padding: 0 20px;
+    padding: 0 $spacing-unit-tiny;
 }
 
 .flex-200 {
@@ -94,63 +50,4 @@ article {
 .flex-300 {
     @extend .flex-;
     flex: 1 1 300px;
-}
-
-footer {
-    @include font(1rem, 1.8, 300);
-    background-color: darken($color-black, 3%);
-    color: $color-white;
-    padding-bottom: 30px;
-    section.contact {
-        h2 {
-            color: $color-white;
-            margin-bottom: 50px;
-        }
-        .contact-card {
-            margin-bottom: 50px;
-            margin-top: -30px;
-
-            img.selfie {
-                width: 200px;
-                height: 200px;
-                display: block;
-                margin: 20px auto;
-                border-radius: 100px;
-                transition: transform 0.4s;
-                &:hover {
-                    transform: rotateZ(5deg);
-                }
-            }
-            div {
-                padding-right: 60px;
-                margin: 0 auto;
-                width: 180px;
-                a {
-                    span.icon {
-                        padding-left: 55px;
-                        display: block;
-                        line-height: 40px;
-                        height: 40px;
-                        margin-top: 20px;
-                        transition: padding-left 0.4s;
-                    }
-                    &:nth-child(1) span.icon {
-                        background: url("../img/email.svg") left center no-repeat;
-                        background-size: 40px;
-                    }
-                    &:nth-child(2) span.icon {
-                        background: url("../img/github.svg") left center no-repeat;
-                        background-size: 40px;
-                    }
-                    &:nth-child(3) span.icon {
-                        background: url("../img/codepen.svg") left center no-repeat;
-                        background-size: 40px;
-                    }
-                    &:hover span {
-                        padding-left: 60px;
-                    }
-                }
-            }
-        }
-    }
 }

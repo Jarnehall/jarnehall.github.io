@@ -6,9 +6,9 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <h1>Hej!</h1>
-            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar front-end-utveckling på Lernia.</p>
-            <p>Kolla in mina <a href="#skoluppgifter">skoluppgifter</a> eller <a href="#kontakt">skriv en rad</a> om du vill komma i kontakt med mig.</p>
+            <h1 id="header-headline">Hej!</h1>
+            <p>Jag heter <strong>Alexander Järnehall</strong> och pluggar frontend-utveckling på Lernia.</p>
+            <p>Kolla in mina <a data-scroll href="#skoluppgifter">skoluppgifter</a> eller <a data-scroll href="#kontakt">skriv en rad</a> om du vill komma i kontakt med mig.</p>
         </div>
     </header>
 
@@ -17,8 +17,8 @@
             <h2 id="om-mig">Lite kort om mig</h2>
             <div class="container">
                 <div class="flex-parent">
-                    <p class="flex-300">Jag valde att läsa front-end-utveckling på grund av min kärlek till riktigt bra webbplatser. Tidigare har jag studerat programmering (framförallt JAVA) och nätverk. Men jag har insett att det är frontend jag verkligen brinner för, därför pluggar jag nu html, css och javascript!</p>
-                    <p class="flex-300">På min fritid sysslar jag med datorspel (just nu går <a target="_blank" href="http://rocketleague.psyonix.com/" title="ROCKET LEAGUE - Official Site">Rocket League</a> och <a target="_blank" href="http://battle.net/hearthstone" title="Hearthstone: Heroes of Warcraft Official Game Site">Hearthstone</a> varmt), matlagning och film. Något som jag skulle kunna lära ut till dig, utöver mina kunskaper inom programmering, är hur man gör en schysst svamprisotto.</p>
+                    <p class="flex-300">Jag läser frontend-utveckling eftersom jag alltid älskat att utveckla för webben, ända sen jag började experimentera med HTML någon gång i mellanstadiet. Tidigare har jag mest sysslat med webbutveckling på hobbynivå, men arbetar nu på att sadla om från mitt tidigare yrke som IT-ansvarig till att bli webbutvecklare.</p>
+                    <p class="flex-300">På min fritid tycker jag om att spela spel (framförallt datorspel, men även bräd- och kortspel), umgås med vänner, laga mat (gärna för att bjuda andra på) och titta på film. En intensiv match av Settlers of Catan med goda vänner efter en vällagad måltid låter som en perfekt kväll i mina öron.</p>
                 </div>
             </div>
         </section>
@@ -28,7 +28,6 @@
             <div class="container">
                 {{ content }}
             </div>
-            <p class="read-more">Läs in fler...<p>
         </section>
     </main>
     <footer>
@@ -46,15 +45,16 @@
                     </div>
                     <div class="contact-form flex-250">
                         <form action="https://getsimpleform.com/messages?form_api_token=1f20453e3382855f45abfded7d5fdcf8" method="post">
-                            <label>Namn<input type="text" name="name" placeholder="John Doe"></label>
-                            <label>E-post<input type="email" name="email" placeholder="john@doe.com"></label>
-                            <label>Meddelande<textarea name="content" placeholder="Tjena, hur är läget?"></textarea></label>
-                            <button type="submit">Skicka</button>
+                            <label>Namn<input type="text" name="name"></label>
+                            <label>E-post<input type="email" name="email"></label>
+                            <label>Meddelande<textarea name="content"></textarea></label>
+                            <button class="btn btn--center btn--green" type="submit">Skicka</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

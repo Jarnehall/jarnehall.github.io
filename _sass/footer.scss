@@ -1,0 +1,72 @@
+footer {
+    font-size: 1rem;
+    line-height: 1em * 1.8;
+    background-color: darken($grey-color-dark, 3%);
+    color: $background-color;
+    padding-bottom: 30px;
+
+    section.contact {
+        h2 {
+            color: $background-color;
+            margin-bottom: 50px;
+        }
+        
+        .contact-card {
+            margin-bottom: 50px;
+            margin-top: -30px;
+
+            img.selfie {
+                width: 200px;
+                height: 200px;
+                display: block;
+                margin: 20px auto;
+                border-radius: 100px;
+                transition: transform 0.4s;
+                &:hover {
+                    transform: rotateZ(5deg);
+                }
+            }
+            div {
+                padding-right: 60px;
+                margin: 0 auto;
+                width: 180px;
+                a {
+                    span.icon {
+                        padding-left: 55px;
+                        display: block;
+                        line-height: 40px;
+                        height: 40px;
+                        margin-top: 20px;
+                        transition: padding-left 0.4s;
+                    }
+                    &:nth-child(1) span.icon {
+                        background: url("../img/email.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:nth-child(2) span.icon {
+                        background: url("../img/github.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:nth-child(3) span.icon {
+                        background: url("../img/codepen.svg") left center no-repeat;
+                        background-size: 40px;
+                    }
+                    &:hover span {
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    a {
+        color: lighten($blue-color-light, 50%);
+        font-weight: 300;
+
+        &:hover {
+            color: lighten($blue-color-light, 60%);
+        }
+    }
+}

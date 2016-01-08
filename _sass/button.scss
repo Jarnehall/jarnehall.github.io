@@ -1,17 +1,31 @@
-button {
-    @include font(1.25rem, 1.5, 600);
-    @include gradient-bg(0deg, darken($color-green, 8%), lighten($color-green, 4%));
-    color: $color-white;
+.btn {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $background-color;
     padding: 8px 50px;
     border: none;
-    transition: 0.2s;
     border-radius: 2px;
+    line-height: 1em * 1.5;
+    transition: 0.4s;
 
     &:hover,
     &:focus {
-        @include gradient-bg(0deg, darken($color-green, 3%), lighten($color-green, 9%));
         text-decoration: underline;
     }
 
     &:active {}
+}
+
+.btn--center {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn--green {
+    @include gradient-bg(0deg, darken($green-color, 8%), lighten($green-color, 4%));
+
+    &:hover,
+    &:focus {
+        @include gradient-bg(0deg, darken($green-color, 3%), lighten($green-color, 9%));
+    }
 }

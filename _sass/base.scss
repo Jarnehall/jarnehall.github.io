@@ -1,46 +1,48 @@
 html {
-    font-size: 18px;
+    font-size: $base-font-size;
 }
 
 body {
+    font-family: $base-font-family;
+    font-size: 1rem;
+    font-weight: $base-font-weight;
+    background-color: $background-color;
     margin: 0 auto;
-    background-color: $color-white;
+    line-height: 1em * $base-line-height;
 }
 
 h1 {
-    @include font(3rem, 1.2, 600);
+    font-family: $base-font-family;
+    font-size: 2.75rem;
     margin-top: 1rem;
-
-        @media (min-width: 500px) {
-            @include font(3.5rem, 1.2, 600);
-    }
+    line-height: 1em * 1;
 }
 
 h2 {
-    @include font(1.75rem, 1.5, 300);
-    text-align: center;
+    font-family: $base-font-family;
+    font-size: 1.75rem;
+    font-weight: $base-font-weight;
     margin-bottom: 1rem;
+    line-height: 1em * $base-line-height;
+    text-align: center;
+}
+
+h3 {
+    margin: 2rem 0 1rem;
 }
 
 a {
     font-weight: 400;
-    color: lighten($color-lightblue, 10%);
+    color: lighten($blue-color-light, 10%);
     border-bottom: 1px solid;
     transition: color 0.3s;
     text-decoration: none;
+
     &:hover {
-        color: darken($color-lightblue, 10%);
+        color: darken($blue-color-light, 10%);
     }
 }
 
-header,
-footer {
-    a {
-        color: lighten($color-lightblue, 48%);
-        font-weight: 300;
-
-        &:hover {
-            color: lighten($color-lightblue, 58%);
-        }
-    }
+img {
+    max-width: 100%;
 }
