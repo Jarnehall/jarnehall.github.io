@@ -19,6 +19,7 @@ permalink: /blogg/:title/
 
 # Filtering Content
 show_drafts: false
+limit_posts: 4
 
 # Post settings
 excerpt_separator: <!--more-->

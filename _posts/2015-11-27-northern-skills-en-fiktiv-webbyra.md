@@ -3,7 +3,7 @@ title:  "Northern Skills, en fiktiv webbyrå"
 assignment: "Uppgift B_3 och B_4"
 ---
 
-Mina personliga erfarenheter från gruppuppgiften som gick ut på att vi skulle skapa en fiktiv webbyrå med tillhörande webbplats, resultatet hittar du det på [Northern Skills webbplats](http://northernskills.se "Northern Skills").<!--more-->
+Mina personliga erfarenheter från gruppuppgiften som gick ut på att vi skulle skapa en fiktiv webbyrå med tillhörande webbplats, resultatet hittar du det på [Northern Skills webbplats](http://northernskills.se "Northern Skills"){:target="_blank"}.<!--more-->
 
 ### Då sätter vi väl igång då!
 

@@ -1,0 +1,69 @@
+header {
+    @include gradient-bg(145deg, $blue-color, $blue-color-light);
+    color: $background-color;
+
+    h1 {
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    a {
+        color: lighten($blue-color-light, 50%);
+        font-weight: 300;
+
+        &:hover {
+            color: lighten($blue-color-light, 60%);
+        }
+    }
+
+    &.post-header {
+        .container {
+            margin: 0 auto;
+            padding: 10px $spacing-unit;
+        }
+    }
+
+    &.page-header {
+        .container {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 30px $spacing-unit-tiny;
+
+            @media (min-width: 500px) and (min-height: 500px) {
+                padding: 80px $spacing-unit;
+
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+
+            @media (min-width: 800px) {
+                padding: 120px $spacing-unit;
+            }
+
+            @media (min-width: 1400px) {
+                padding: 180px $spacing-unit;
+            }
+
+            h1 {
+                animation: fade-in 1s ease-in-out;
+            }
+
+            p {
+                font-size: 1.25rem;
+                line-height: 1em * 1.5;
+                text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+                animation: stay-hidden 0.5s,
+                           fade-in 1s 0.5s ease-in-out;
+
+                @media (min-width: 500px) {
+                    font-size: 1.425rem;
+                    line-height: 1em * 1.5;
+
+                    strong {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
