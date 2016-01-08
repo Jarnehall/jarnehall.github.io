@@ -21,7 +21,7 @@ input {
 
 textarea {
     @extend input;
-    padding-top: 5px;
+    padding: 5px 10px;
     line-height: 1em * 1.4;
     height: 150px;
     resize: none;
@@ -36,10 +36,15 @@ textarea:focus {
 
 ::-webkit-input-placeholder {
     font-weight: 300;
-    color: #acacac;
+    color: #959595;
 }
 
 ::-moz-placeholder {
     font-weight: 300;
-    color: #acacac;
+    color: #959595;
+}
+
+::placeholder {
+    font-weight: 300;
+    color: #959595;
 }

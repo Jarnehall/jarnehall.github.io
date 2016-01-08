@@ -26,10 +26,11 @@ header {
         .container {
             margin: 0 auto;
             max-width: 600px;
-            padding: 50px $spacing-unit;
+            padding: 30px $spacing-unit;
+            transition: padding 0.5s;
 
             @media (min-width: 500px) and (min-height: 500px) {
-                padding: 80px $spacing-unit;
+                padding: 60px $spacing-unit;
 
                 h1 {
                     font-size: 3.5rem;
@@ -37,7 +38,16 @@ header {
             }
 
             @media (min-width: 800px) {
-                padding: 120px $spacing-unit;
+                padding: 80px $spacing-unit;
+
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                p {
+                    font-size: 1.425rem;
+                    line-height: 1em * 1.5;
+                }
             }
 
             @media (min-width: 1400px) {
@@ -45,7 +55,7 @@ header {
             }
 
             h1 {
-                animation: fade-in 1s ease-in-out;
+                animation: fade-in 1.5s ease-out;
             }
 
             p {
@@ -53,13 +63,18 @@ header {
                 line-height: 1em * 1.5;
                 text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
                 animation: stay-hidden 0.5s,
-                           fade-in 1s 0.5s ease-in-out;
+                           fade-in 1.5s 0.5s ease-out;
 
                 strong {
                    font-size: 1.1em;
                 }
 
-                @media (min-width: 500px) {
+                @media (min-width: 500px) and (min-height: 500px) {
+                    font-size: 1.425rem;
+                    line-height: 1em * 1.5;
+                }
+
+                @media (min-width: 800px) {
                     font-size: 1.425rem;
                     line-height: 1em * 1.5;
                 }

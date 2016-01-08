@@ -7,12 +7,12 @@ var formName = document.getElementsByName("name"),
 
 smoothScroll.init();
 
-createCharacterObject ("Sherlock Holmes", "sherlock@gmail.com", "Elementary my dear Watson.");
-createCharacterObject ("Bruce Banner", "bruce.banner@avengers.com", "Don't get me angry. You would not like me when I'm angry!");
+createCharacterObject ("Sherlock Holmes", "sh@gmail.com", "Elementary, my dear Watson.");
+createCharacterObject ("Bruce Banner", "bruce.banner@avengers.com", "Don't make me angry. You wouldn't like me when I'm angry.");
 createCharacterObject ("Tobias Fünke", "tobias@bluthcompany.com", "Perhaps an attic shall I seek...");
-createCharacterObject ("Tyrion Lannister", "tyrion@thelannisters.com", "It's not easy being drunk all the time. Everyone would do it if it were easy.");
+createCharacterObject ("Tyrion Lannister", "tyrion@lannister.com", "It's not easy being drunk all the time. Everyone would do it if it were easy.");
 createCharacterObject ("Joe Cooper", "joe.cooper@nasa.gov", "Mankind was born on Earth. It was never meant to die here.");
-createCharacterObject ("Walter White", "walter.white@wynne.k12.ar.us", "I AM THE ONE WHO KNOCKS!");
+createCharacterObject ("Walter White", "walter.white@wynne.k12.ar.us", "I am the one who knocks!");
 
 var random = getRandomInt(0, altForms.length);
 
