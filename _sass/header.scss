@@ -26,7 +26,7 @@ header {
         .container {
             margin: 0 auto;
             max-width: 600px;
-            padding: 30px $spacing-unit-tiny;
+            padding: 50px $spacing-unit;
 
             @media (min-width: 500px) and (min-height: 500px) {
                 padding: 80px $spacing-unit;
@@ -55,13 +55,13 @@ header {
                 animation: stay-hidden 0.5s,
                            fade-in 1s 0.5s ease-in-out;
 
+                strong {
+                   font-size: 1.1em;
+                }
+
                 @media (min-width: 500px) {
                     font-size: 1.425rem;
                     line-height: 1em * 1.5;
-
-                    strong {
-                        font-size: 1.1em;
-                    }
                 }
             }
         }

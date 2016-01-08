@@ -5,7 +5,7 @@ layout: start
 <ul class="post-list flex-parent">
     {% for post in site.posts %}
         <li class="post flex-300">
-            <h3>
+            <h3 class="post-title">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h3>
             <span class="post-meta"><strong>{{ post.assignment }}</strong> - {{ post.date | date: "%-d %b, %Y" }}</span>
