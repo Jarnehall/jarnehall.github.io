@@ -1,11 +1,35 @@
-<footer class="site-footer">
+<footer>
 
-    <div class="contact-card container">
-        <div>
-            <a href="mailto:alexander@jarnehall.se" title="Skicka e-post till: {{ site.email }}"><span class="icon">{{ site.email }}</span></a>
-            <a target="_blank" href="http://github.com/jarnehall" title="GitHub - Alexander Järnehall"><span class="icon">github.com/jarnehall</span></a>
-            <a target="_blank" href="http://codepen.io/jarnehall" title="CodePen - Alexander Järnehall"><span class="icon">codepen.io/jarnehall</span></a>
-        </div>
-    </div>
+    <section class="contact">
+
+        <h2 id="kontakt">Kontakta mig</h2>
+
+        <div class="container">
+            <div class="flex-parent">
+                <div class="contact-card flex-250">
+
+                    <img class="selfie" src="img/me.jpg" alt="This is me!">
+                    <div class="social-icons-container">
+                        <a href="mailto:alexander@jarnehall.se" title="Skicka e-post till: {{ site.email }}"><span class="social-icon--email">{{ site.email }}</span></a>
+                        <a target="_blank" href="http://github.com/jarnehall" title="GitHub - Alexander Järnehall"><span class="social-icon--github">github.com/jarnehall</span></a>
+                        <a target="_blank" href="http://codepen.io/jarnehall" title="CodePen - Alexander Järnehall"><span class="social-icon--codepen">codepen.io/jarnehall</span></a>
+                    </div>
+
+                </div> <!-- end div.contact-card -->
+
+                <div class="contact-form flex-250">
+
+                    <form id="contactForm" action="https://getsimpleform.com/messages?form_api_token=1f20453e3382855f45abfded7d5fdcf8" method="post">
+                        <label>Namn<input type="text" name="name" required></label>
+                        <label>E-post<input type="email" name="email" required></label>
+                        <label>Meddelande<textarea name="content" required></textarea></label>
+                        <button class="btn--green align-center" type="submit">Skicka</button>
+                    </form>
+
+                </div>  <!-- end div.contact-form -->
+            </div> <!-- end div.flex-parent -->
+        </div> <!-- end div.container -->
+
+    </section>
 
 </footer>

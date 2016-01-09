@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Alexanders digitala presentationsyta
+title: Alexanders DPY
 email: alexander@jarnehall.se
-description: En webbplats för min utbildning inom frontend-utveckling.
+description: En DPY (eller DigitalPresentationsYta) för min utbildning inom frontend-utveckling.
 baseurl: ""
 url: "http://jarnehall.se" # the base hostname & protocol for your site
 timezone: Europe/Stockholm
