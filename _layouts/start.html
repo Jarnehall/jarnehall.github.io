@@ -44,10 +44,10 @@
                         </div>
                     </div>
                     <div class="contact-form flex-250">
-                        <form action="https://getsimpleform.com/messages?form_api_token=1f20453e3382855f45abfded7d5fdcf8" method="post">
-                            <label>Namn<input type="text" name="name"></label>
-                            <label>E-post<input type="email" name="email"></label>
-                            <label>Meddelande<textarea name="content"></textarea></label>
+                        <form id="contactForm" action="https://getsimpleform.com/messages?form_api_token=1f20453e3382855f45abfded7d5fdcf8" method="post">
+                            <label>Namn<input type="text" name="name" required></label>
+                            <label>E-post<input type="email" name="email" required></label>
+                            <label>Meddelande<textarea name="content" required></textarea></label>
                             <button class="btn btn--center btn--green" type="submit">Skicka</button>
                         </form>
                     </div>
