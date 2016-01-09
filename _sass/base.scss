@@ -12,15 +12,16 @@ body {
 }
 
 h1 {
-    font-family: $base-font-family;
+    font-family: $headline-font-family;
+    font-weight: $headline-font-weight;
     font-size: 2.75rem;
     margin-top: 1rem;
     line-height: 1em * 1;
 }
 
 h2 {
-    font-family: $base-font-family;
-    font-size: 1.75rem;
+    font-family: $headline-font-family;
+    font-size: 1.5rem;
     font-weight: $base-font-weight;
     margin-bottom: 2rem;
     line-height: 1em * $base-line-height;
@@ -28,18 +29,21 @@ h2 {
 }
 
 h3 {
+    font-family: $headline-font-family;
+    font-size: 1.35rem;
+    font-weight: $headline-font-weight;
     margin: 2rem 0 1rem;
 }
 
 a {
     font-weight: 400;
-    color: lighten($blue-color-light, 10%);
+    color: lighten($brand-color, 10%);
     border-bottom: 1px solid;
     transition: color 0.3s;
     text-decoration: none;
 
     &:hover {
-        color: darken($blue-color-light, 10%);
+        color: darken($brand-color, 5%);
     }
 }
 

@@ -1,5 +1,5 @@
 header {
-    @include gradient-bg(145deg, $blue-color, $blue-color-light);
+    @include gradient-bg(145deg, $brand-color-dark, darken($brand-color, 5%));
     color: $background-color;
 
     h1 {
@@ -7,77 +7,73 @@ header {
     }
 
     a {
-        color: lighten($blue-color-light, 50%);
+        color: lighten($brand-color-light, 30%);
         font-weight: 300;
 
         &:hover {
-            color: lighten($blue-color-light, 60%);
+            color: lighten($brand-color-light, 40%);
         }
     }
+}
 
-    &.post-header {
-        .container {
-            margin: 0 auto;
-            padding: 10px $spacing-unit;
-        }
+.post-header {
+    .container {
+        margin: 0 auto;
+        padding: 10px $spacing-unit;
     }
+}
 
-    &.page-header {
-        .container {
-            margin: 0 auto;
-            max-width: 600px;
-            padding: 30px $spacing-unit;
-            transition: padding 0.5s;
+.page-header {
+    .container {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px $spacing-unit;
+        transition: padding 0.5s;
 
-            @media (min-width: 500px) and (min-height: 500px) {
-                padding: 60px $spacing-unit;
-
-                h1 {
-                    font-size: 3.5rem;
-                }
-            }
-
-            @media (min-width: 800px) {
-                padding: 80px $spacing-unit;
-
-                h1 {
-                    font-size: 3.5rem;
-                }
-
-                p {
-                    font-size: 1.425rem;
-                    line-height: 1em * 1.5;
-                }
-            }
-
-            @media (min-width: 1400px) {
-                padding: 180px $spacing-unit;
-            }
+        @media (min-width: 500px) and (min-height: 500px) {
+            padding: 60px $spacing-unit;
 
             h1 {
-                animation: fade-in 1.5s ease-out;
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (min-width: 800px) {
+            padding: 80px $spacing-unit;
+
+            h1 {
+                font-size: 3.5rem;
             }
 
             p {
-                font-size: 1.25rem;
+                font-size: 1.425rem;
                 line-height: 1em * 1.5;
-                text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-                animation: stay-hidden 0.5s,
-                           fade-in 1.5s 0.5s ease-out;
+            }
+        }
 
-                strong {
-                   font-size: 1.1em;
-                }
+        @media (min-width: 1400px) {
+            padding: 180px $spacing-unit;
+        }
 
-                @media (min-width: 500px) and (min-height: 500px) {
-                    font-size: 1.425rem;
-                    line-height: 1em * 1.5;
-                }
+        h1 {
+            animation: fade-in 1.5s ease-out;
+        }
 
-                @media (min-width: 800px) {
-                    font-size: 1.425rem;
-                    line-height: 1em * 1.5;
-                }
+        p {
+            font-size: 1.25rem;
+            line-height: 1em * 1.5;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+            animation: stay-hidden 0.5s,
+                       fade-in 1.5s 0.5s ease-out;
+
+            @media (min-width: 500px) and (min-height: 500px) {
+                font-size: 1.425rem;
+                line-height: 1em * 1.5;
+            }
+
+            @media (min-width: 800px) {
+                font-size: 1.425rem;
+                line-height: 1em * 1.5;
             }
         }
     }

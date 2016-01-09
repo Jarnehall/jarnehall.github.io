@@ -29,22 +29,22 @@ textarea {
 
 input:focus,
 textarea:focus {
-    background-color: lighten($blue-color-light, 60%);
-    border: 2px lighten($blue-color-light, 30%) solid;
+    background-color: lighten($brand-color-light, 35%);
+    border: 2px lighten($brand-color-light, 10%) solid;
     outline: 0;
 }
 
 ::-webkit-input-placeholder {
     font-weight: 300;
-    color: #959595;
+    color: $grey-color-light;
 }
 
 ::-moz-placeholder {
     font-weight: 300;
-    color: #959595;
+    color: $grey-color-light;
 }
 
 ::placeholder {
     font-weight: 300;
-    color: #959595;
+    color: $grey-color-light;
 }

@@ -1,31 +1,31 @@
-.btn {
+.btn--base {
     font-size: 1.25rem;
     font-weight: 600;
+    background-color: $brand-color-light;
     color: $background-color;
-    padding: 8px 50px;
-    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border: 2px $brand-color-light solid;
     border-radius: 2px;
     line-height: 1em * 1.5;
+    min-width: 150px;
     transition: 0.4s;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 
     &:hover,
     &:focus {
-        text-decoration: underline;
+        background-color: transparent;
+        color: $brand-color-light;
     }
-
-    &:active {}
-}
-
-.btn--center {
-    display: block;
-    margin: 0 auto;
 }
 
 .btn--green {
-    @include gradient-bg(0deg, darken($green-color, 8%), lighten($green-color, 4%));
+    @extend .btn--base;
+    background-color: $green-color;
+    border: 2px $green-color solid;
 
     &:hover,
     &:focus {
-        @include gradient-bg(0deg, darken($green-color, 3%), lighten($green-color, 9%));
+        color: $green-color;
     }
 }

@@ -4,28 +4,32 @@
 @charset "utf-8";
 
 // My variables
-$base-font-family: "Open Sans", sans-serif;
-$base-font-size:   18px;
-$base-font-weight: 300;
-$small-font-size:  16px;
-$base-line-height: 1.75;
+$base-font-family:        "Open Sans", sans-serif;
+$headline-font-family:    "Merriweather", serif;
+$base-font-size:          18px;
+$small-font-size:         16px;
+$base-font-weight:        300;
+$headline-font-weight:    400;
+$base-line-height:        1.75;
 
-$spacing-unit:     30px;
-$spacing-unit-tiny:20px;
+$spacing-unit:            30px;
+$spacing-unit-tiny:       20px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
+$text-color:              #111;
+$background-color:        #fdfdfd;
 
-$blue-color:       #02264b;
-$blue-color-light: #0458af;
-$green-color:      #13ad06;
+$brand-color:             #0458af;
+$brand-color-dark:        darken($brand-color, 20%);
+$brand-color-light:       lighten($brand-color, 20%);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  #262626;
+$green-color:             #13ad06;
+
+$grey-color:              #828282;
+$grey-color-light:        lighten($grey-color, 15%);
+$grey-color-dark:         #262626;
 
 // Width of the content area
-$content-width:    880px;
+$content-width:           880px;
 
 // Mixins
 @mixin gradient-bg($deg, $color1, $color2) {
