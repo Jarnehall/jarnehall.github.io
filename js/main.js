@@ -20,6 +20,7 @@ createCharacterObject ("Jack Sparrow", "jack.sparrow@theblackpearl.ship", "The p
 createCharacterObject ("Hoban Washburne", "hoban@serenity.space", "I'm a leaf in the wind. Watch how I soar.");
 createCharacterObject ("Andrew Ryan", "andrew.ryan@rapture.com", "We all make choices; but in the end our choices make us.");
 createCharacterObject ("Fox Mulder", "fox.mulder@fbi.gov", "I want to believe.");
+createCharacterObject ("Charlie Kelly", "charlie.kelly0037@online.aol.com", "Is your cat making to much noise all the time?");
 
 var random = getRandomInt(0, altForms.length);
 
