@@ -1,5 +1,5 @@
 ---
-title:  "Få saker gjorda med webbappen to-do"
+title:  "Få det gjort med webbappen to-do"
 assignment: "Uppgift C_1"
 ---
 

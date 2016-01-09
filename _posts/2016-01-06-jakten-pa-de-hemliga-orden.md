@@ -5,7 +5,7 @@ assignment: "Uppgift C_2"
 
 Uppgiften gick ut på att vi, individuellt, skulle utveckla ett utbildande spel med hjälp av html, css och javascript.
 
-Mitt spel kallar jag för [Ordjakten](http://jarnehall.github.com/ordjakten/){:target="_blank"}! <!--more--> Testa gärna spela spelet, eller inspektera koden som finns versionshanterad på [GitHub](https://github.com/jarnehall/ordjakten/){:target="_blank"}.
+Mitt spel kallar jag för *Ordjakten*!<!--more--> Testa gärna [spela spelet](http://jarnehall.github.com/ordjakten/) eller inspektera koden, som finns versionshanterad på [GitHub](https://github.com/jarnehall/ordjakten/){:target="_blank"}.
 
 
 ### Idéskiss
