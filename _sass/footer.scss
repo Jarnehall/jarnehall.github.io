@@ -1,6 +1,6 @@
 footer {
     font-size: 1rem;
-    background-color: darken($grey-color-dark, 3%);
+    background-color: $grey-color-dark;
     color: $background-color;
     padding-bottom: 50px;
     line-height: 1em * 1.8;
@@ -61,16 +61,13 @@ footer {
 }
 
 .social-icon--email {
-    @extend .social-icon;
     background-image: url(../img/email.svg);
 }
 
 .social-icon--github {
-    @extend .social-icon;
     background-image: url(../img/github.svg);
 }
 
 .social-icon--codepen {
-    @extend .social-icon;
     background-image: url(../img/codepen.svg);
 }
