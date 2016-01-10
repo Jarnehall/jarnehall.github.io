@@ -1,14 +1,15 @@
 header {
-    @include gradient-bg(145deg, $brand-color-dark, darken($brand-color, 5%));
+    @include gradient-bg(145deg, $brand-color-dark, transparent);
     color: $background-color;
+    background-color: darken($brand-color, 5%);
 
     h1 {
         text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
     }
 
     a {
-        color: lighten($brand-color-light, 30%);
         font-weight: 300;
+        color: lighten($brand-color-light, 30%);
 
         &:hover {
             color: lighten($brand-color-light, 40%);
@@ -18,16 +19,16 @@ header {
 
 .post-header {
     .container {
-        margin: 0 auto;
         padding: 10px $spacing-unit;
+        margin: 0 auto;
     }
 }
 
 .page-header {
     .container {
+        padding: 30px $spacing-unit;
         margin: 0 auto;
         max-width: 600px;
-        padding: 30px $spacing-unit;
         transition: padding 0.5s;
 
         @media (min-width: 500px) and (min-height: 500px) {
@@ -60,12 +61,12 @@ header {
         }
 
         p {
-            font-size: 1.25rem;
-            line-height: 1em * 1.5;
-            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
             animation: stay-hidden 0.5s,
                        fade-in 1.5s 0.5s ease-out;
 
+            font-size: 1.25rem;
+            line-height: 1em * 1.5;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
             @media (min-width: 500px) and (min-height: 500px) {
                 font-size: 1.425rem;
                 line-height: 1em * 1.5;

@@ -1,31 +1,32 @@
 .btn--base {
     font-size: 1.25rem;
     font-weight: 600;
-    background-color: $brand-color-light;
-    color: $background-color;
+    background-color: transparent;
+    color: $brand-color-light;
     cursor: pointer;
     padding: 6px;
     border: 2px $brand-color-light solid;
     border-radius: 2px;
     line-height: 1em * 1.5;
     min-width: 150px;
-    transition: 0.4s;
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 
     &:hover,
     &:focus {
-        background-color: transparent;
-        color: $brand-color-light;
+        background-color: $brand-color-light;
+        color: $background-color;
     }
 }
 
 .btn--green {
     @extend .btn--base;
-    background-color: $green-color;
+    color: $green-color;
     border: 2px $green-color solid;
 
     &:hover,
     &:focus {
-        color: $green-color;
+        background-color: $green-color;
     }
 }
