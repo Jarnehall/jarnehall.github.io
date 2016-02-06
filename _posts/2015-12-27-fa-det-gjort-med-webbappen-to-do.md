@@ -17,11 +17,11 @@ Slutresultatet ser ganka annorlunda ut från min första mockup som kan ses här
 
 Men jag ville testa och lära mig nya saker! Jag började fundera på hur [Trello](http://trello.com){:target="_blank"} (som vi använt under flera gruppuppgifter) ser ut och fungerar, och utmana mig själv att utveckla min to-do app till någon liknande.
 
-Några saker jag använde för att efterlikna Trellos funktionalitet är drag & drop för listor och listobjekt, möjligheten att skapa hur många listor man vill, horizontellt skrollande design som anpassar sidans bredd efter antalet listor (räknas ut och appliceras med javascript) samt att spara användarens listor och listobjekt (görs ganska rudamentärt med localStorage av html objekten just nu, men jag lekte runt med att använda [Firebase](http://firebase.com){:target="_blank"} för att spara listorna till en användare med riktig backend, men hann inte implementera det innan deadline).
+Några saker jag använde för att efterlikna Trellos funktionalitet är drag & drop för listor och listobjekt, möjligheten att skapa hur många listor man vill, en horizontellt skrollande design som anpassar sidans bredd efter antalet listor (räknas ut och appliceras med javascript) samt att spara användarens listor och listobjekt (görs ganska rudamentärt med localStorage just nu, men jag lekte runt med [Firebase](http://firebase.com){:target="_blank"} för att spara listorna till en användare med riktig backend, men hann inte implementera det innan deadline).
 
 ### Sluttankar
 
-Jag testade och lärde mig många nya saker under uppgiftens gång, och jag är nöjd med resultatet. Men det vore roligt att återvända till uppgiften i framtiden och implementera riktig backend (via t.ex. Firebase) och lägga till fler funktioner så som olika färgteman och att olika användare kan samarbeta på en gemensam lista.
+Jag testade och lärde mig många nya saker under uppgiftens gång, och jag är nöjd med resultatet. Men det vore roligt att återvända till uppgiften i framtiden och implementera riktig backend (via t.ex. Firebase) och lägga till fler funktioner så som olika färgteman och att användare kan samarbeta på en gemensam lista.
 
 ---
 
